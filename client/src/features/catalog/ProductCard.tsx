@@ -10,6 +10,7 @@ import {
   IconButton,
 } from "@mui/material";
 import { Product } from "../../app/models/product";
+import React from "react";
 
 interface Props {
   product: Product;
@@ -20,13 +21,13 @@ export default function Productcard({ product }: Props) {
     <Card>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: "secondary.main" }}>
+          <Avatar sx={{ bgcolor: "#9e9e9e" }}>
             {product.name.charAt(0).toLocaleUpperCase()}
           </Avatar>
         }
         title={product.name}
         titleTypographyProps={{
-          sx: { fontWeight: "bold", color: "primary.main" },
+          sx: { fontWeight: "bold", color: "dark" },
         }}
       />
       <CardMedia
@@ -36,11 +37,11 @@ export default function Productcard({ product }: Props) {
         }}
         component="img"
         image={product.pictureUrl}
-        alt="ski utstyr"
+        alt="product"
         title={product.name}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" color="secondary">
+        <Typography gutterBottom variant="h5" color="dark">
           kr {(product.price / 100).toFixed(2)}
         </Typography>
         <Typography variant="body2" color="text.secondary">

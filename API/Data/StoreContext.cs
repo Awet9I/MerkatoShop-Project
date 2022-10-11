@@ -14,7 +14,7 @@ namespace API.Data
 
         }
 
-       //sets up the table for the entity product
+        //sets up the table for the entity product
         public DbSet<Product> Products { get; set; }
     }
 }
