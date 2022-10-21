@@ -4,6 +4,7 @@ using API.Models;
 
 namespace API.Data
 {
+    // A class to seed the database with products
     public static class DbIntializer
     {
         public static void Initialize(StoreContext context){

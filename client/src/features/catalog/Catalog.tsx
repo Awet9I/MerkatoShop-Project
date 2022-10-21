@@ -21,6 +21,11 @@ function addProduct() {
       </Button> -> add this line of code to return statment of catalog
 } */
 
+/**
+ * Uses the useeffect hook fetch method to fetch data from given url
+ * Parses data into json and pass to usestate, which populate the Product array with data
+ * @returns ProductList component
+ */
 export default function Catalog() {
   const [products, setProducts] = useState<Product[]>([]);
 

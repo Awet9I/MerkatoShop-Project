@@ -7,6 +7,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Data
 {
+    /*
+    * A class that inherits from DbContext interface inorder to be able to access our database
+    * https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/
+    */
     public class StoreContext : DbContext
     {
         public StoreContext(DbContextOptions options) : base(options)

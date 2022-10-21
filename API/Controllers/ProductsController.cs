@@ -18,14 +18,14 @@ namespace API.Controllers
 
         public ProductsController(StoreContext context)
         {
+            // Initialize database session using SoreContext
             _context = context;
             
         }
 
         [HttpGet]
         public async Task<ActionResult<List<Product>>>GetProducts(){
-            
-          
+            // Return all products 
             return  await _context.Products.ToListAsync();
 
         }
@@ -33,6 +33,7 @@ namespace API.Controllers
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>>GetProduct(int id){
+            // Return a product with matching id
             return await _context.Products.FindAsync(id);
         }
         

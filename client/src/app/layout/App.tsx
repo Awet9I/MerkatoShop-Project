@@ -14,6 +14,7 @@ import AboutPage from "../../features/About/AboutPage";
 import ContactPage from "../../features/Contact/ContactPage";
 
 function App() {
+  // Creating a custome theme
   const theme = createTheme({
     palette: {
       background: {
@@ -22,6 +23,7 @@ function App() {
     },
   });
   return (
+    // ThemeProvider to wrap the app with custom theme defined above
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Header />

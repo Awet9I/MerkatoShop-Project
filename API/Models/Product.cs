@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace API.Models
 {
+    // Plain old c# class for product entity
     public class Product
     {
         public int Id { get; set; }

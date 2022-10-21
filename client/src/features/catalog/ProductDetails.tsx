@@ -15,6 +15,10 @@ import { useParams } from "react-router-dom";
 import { Product } from "../../app/models/product";
 import Productcard from "./ProductCard";
 
+/**
+ * A function that returns a grid component containing two grid items. Product image and its details rendered in a table. A single products is fetched using axios(https://www.javatpoint.com/react-axios)
+ * @returns <Grid>
+ */
 export default function () {
   const { id } = useParams<{ id: string }>();
   const [product, setProduct] = useState<Product | null>(null);
