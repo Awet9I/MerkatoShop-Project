@@ -17,10 +17,12 @@ Further more the user can select a product and see the details of that product. 
    - TypeScript
 
    Components used in this project:
-        - Visual studio IDE
-        - ASP.net core 5.0
-        - Entity framework
-        - react library
-        - react-router-dom
-        - matrial UI
-        - SQLITE database
+   
+   
+  - Visual studio IDE
+  - ASP.net core 5.0
+  - Entity framework
+  - react library
+  - react-router-dom
+  - matrial UI
+  - SQLITE database
